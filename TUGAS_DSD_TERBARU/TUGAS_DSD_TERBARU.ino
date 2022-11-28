@@ -18,7 +18,6 @@ textEffect_t scrollEffect = PA_SCROLL_LEFT;
 textPosition_t scrollAlign = PA_CENTER;
 uint16_t scrollPause = 125; // JEDA WAKTU SETELAH SEMUA TEXT SELESAI DI TAMPILKAN
 
-// Global message buffers shared by Serial and Scrolling functions
 #define  BUF_SIZE  14 //PANJANG TULISAN
 char curMessage[BUF_SIZE] = { "Teks Berjalan" }; //TULISAN YANG AKAN DI TAMPILKAN BERKALI KALI
 char newMessage[BUF_SIZE] = { "Teks Berjalan" }; //TULISAN UNTUK PERTAMA KALI ARDUINO DI HIDUPKAN
