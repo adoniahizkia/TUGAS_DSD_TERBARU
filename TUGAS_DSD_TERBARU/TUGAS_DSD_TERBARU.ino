@@ -13,14 +13,14 @@
 
 MD_Parola P = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 
-uint8_t scrollSpeed = 125;    // JEDA WAKTU JALAN NYA TEXT
+uint8_t scrollSpeed = 70;    // JEDA WAKTU JALAN NYA TEXT
 textEffect_t scrollEffect = PA_SCROLL_LEFT;
 textPosition_t scrollAlign = PA_CENTER;
 uint16_t scrollPause = 125; // JEDA WAKTU SETELAH SEMUA TEXT SELESAI DI TAMPILKAN
 
-#define  BUF_SIZE  14 //PANJANG TULISAN
-char curMessage[BUF_SIZE] = { "Teks Berjalan" }; //TULISAN YANG AKAN DI TAMPILKAN BERKALI KALI
-char newMessage[BUF_SIZE] = { "Teks Berjalan" }; //TULISAN UNTUK PERTAMA KALI ARDUINO DI HIDUPKAN
+#define  BUF_SIZE  140 //PANJANG TULISAN
+char curMessage[BUF_SIZE] = { "Rancang Bangun Teks Berjalan Pada Modul LED Dot Matrix 32 x 8 Berbasis Arduino Nano" }; //TULISAN UNTUK PERTAMA KALI ARDUINO DI HIDUPKAN
+char newMessage[BUF_SIZE] = { "Anggota Kelompok : Rahmad Mujaki, Dave Adonia Hizkia dan Adib Al-Sunni" }; //TULISAN YANG AKAN DI TAMPILKAN BERKALI KALI
 bool newMessageAvailable = true;
 int contrast = 0; // atur kecerahan
 void setup()
